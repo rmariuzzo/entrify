@@ -10,7 +10,7 @@ Some project has a `package.json` for each of component directories. This is wit
 
 To remediate this situation we have to create an `index.js` file for each of those `package.json`. That's where **entrify** shines ✨.
 
-> 💁 **Hey!** For the command line tool head to: [https://github.com/rmariuzzo/entrify-cli].
+> 💁 **Hey!** For the command line tool head to: [entrify-cli](https://github.com/rmariuzzo/entrify-cli).
 
 ## Installation
 
