@@ -44,4 +44,13 @@ describe('entrify', () => {
     expect(fs.existsSync(`${dir}/package.json`)).toBe(true)
   })
 
+  it('should create an index.js for a package.json found in a nested directory', () => {
+    const dir = `${testDir.name}/nested-package`
+    entrify(dir)
+
+    expect(fs.existsSync(`${dir}/valid-package/index.js`)).toBe(true)
+    expect(fs.existsSync(`${dir}/valid-package/package.json`)).toBe(false)
+    expect(require(`${dir}/valid-package/index.js`)).toBe('test')
+  })
+
 })
