@@ -33,6 +33,24 @@ const entrify = require('entrify')
 entrify(path.join(__dirname, './src/components'))
 ```
 
+**Before:**
+
+```
+ src/components/
+  | -- button
+        | -- package.json   (the main field points to `Button.js`)
+        | -- Button.js
+```
+
+**After:**
+
+```
+ src/components/
+  | -- button
+        | -- index.js       (created in place of the package.json, it exports `Button.js`)
+        | -- Button.js
+```
+
 ## Documentation
 
 ### `entrify(directory)`
