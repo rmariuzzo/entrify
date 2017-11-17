@@ -2,7 +2,7 @@
 
 # entrify
 
-📦  Convert `package.json` to `index.js` and viceversa.
+📦  Library to convert `package.json` to `index.js`.
 
 </div>
 
