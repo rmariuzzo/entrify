@@ -1,10 +1,4 @@
-<div align=center>
-
-# entrify
-
-📦  Library to convert `package.json` to `index.js`.
-
-</div>
+![entrify – Library to convert package.json to index.js.](banner.svg)
 
 Some project has a `package.json` for each of component directories. This is with the benefit to be able to indicate the a main file per directory, which is nice. However, some tools like prettier and eslint, and features as webpack resolve/alias will not work properly.
 
